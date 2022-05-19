@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Introduction</title>
+    <style>
+        body, html {
+          height: 100%;
+        }
+        body {
+          margin: 0;
+        }
+        header {
+          width: 100%;
+        }
+        header li {
+          display:inline-block;
+          background-color: #666666;
+          border-right: 1px solid black;
+          width: 20%;
+          height: 50px;
+          text-align: center;
+          line-height: 50px;
+        }
+        header li:last-of-type {
+          border: none;
+        }
+        header li a {
+          text-decoration: none;
+          color: white;
+        }
+        header li a:hover {
+          text-decoration: underline;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            padding: 0;
+            margin: 0;
+        }
+        .active-page {
+          background-color: #A90000;
+        }
+        .layout {
+          padding: 20px;
+        }
+        .layout h2 {
+          margin: 0;
+        }
+        .layout > div {
+          display: inline-block;
+        }
+        .layout > div:last-child {
+          width: 283px;
+        }
+        .layout > div:last-child > div {
+          padding-bottom: 10px;
+        }
+        .layout > div:last-child img {
+          width: 283px;
+        }
+        .layout > div:first-child {
+          width: 100%;
+          padding-right: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="flex-container">
+        <li>
+          <a href="Index.html">Home</a>
+        </li>
+        <li class="active-page">
+          <a href="Introduction.html">Introduction</a>
+        </li>
+        <li>
+          <a href="PartsCategories.html">Parts Categories</a>
+        </li>
+        <li>
+          <a href="RecommendedCars.html">Recommended Cars</a>
+        </li>
+        <li>
+          <a href="Videos.html">Videos</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="layout flex-container">
+    <div>
+      <h2>Introduction</h2>
+
+      <p>
+        Modifing a street car for racing can be a great way to experience the thrill of driving on the track for both hobby and competition.
+        There are pleny of affordable and fun to drive cars that have the potential to be excellent track-day machines. This guide is designed to help find the right car and aftermarket parts that suit your racing ambitions!
+        <br><br>To begin, let’s go over the basics of what makes a good track car, and what can be modified to help push the car toward racing pedigree.
+        <br><br><b>Car: </b>The size and weight of a car are the first things you want to look out for when considering which car to purchase.
+        A compact car, for example, would be better suited for racing than a mid or full size car. Smaller cars not only weigh less, but also tend to be more agile and responsive. The recommended car classes are as follows:
+      </p>
+      <ul>
+        <li>Compact</li>
+        <li>Subcompact</li>
+        <li>Roadster</li>
+      </ul>
+      <p>
+        The engine that a car comes with, such as cynlinder count and horsepower, matters less than its resilience against being pushed to redline. For the transmission, both manual and automatic are ok, as long as it has real physical gears and is otherwise not a continuosly variable transmission (CVT). CVTs are not nearly as responsive or resilient as standard tramissions, and cars equipped with CVTs should be avoided for track use.
+        <br><br><b>Modifications: </b>Aftermarket performance parts are an excellent way to bridge the gap between street car and track car. Ideally, your car of choise is something that has plenty of aftermarket parts available. The key areas of a car that can be upgraded are as follows:
+      </p>
+      <ul>
+        <li>Handling (wheels, tires, brakes, suspension)</li>
+        <li>Horsepower (engine, exhaust)</li>
+        <li>Drivetrain (transmission, clutch)</li>
+        <li>Weight (weight reduction)</li>
+        <li>Interior (seats, steering wheel, roll cage)</li>
+      </ul>
+    </div>
+    <div>
+      <div>
+        <img src="./Assets/Images/bmwm3racecar.jpg" alt="BMW M3 Racecar" />
+        Pictured: BMW M3 Race Car 
+      </div>
+      <div>
+        <img src="./Assets/Images/fordfocusracecar.jpg" alt="Ford Focus Racecar" />
+        Pictured: Ford Focus ST Race Car
+      </div>
+      <div>
+        <img src="./Assets/Images/hondacivicracecar.jpg" alt="Honda Civic Racecar" />
+        Pictured: Honda Civic Si Race Car
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

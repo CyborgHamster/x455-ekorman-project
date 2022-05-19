@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recommended Cars</title>
+    <style>
+        body, html {
+          height: 100%;
+        }
+        body {
+          margin: 0;
+        }
+        header {
+          width: 100%;
+        }
+        header li {
+          display:inline-block;
+          background-color: #666666;
+          border-right: 1px solid black;
+          width: 20%;
+          height: 50px;
+          text-align: center;
+          line-height: 50px;
+        }
+        header li:last-of-type {
+          border: none;
+        }
+        header li a {
+          text-decoration: none;
+          color: white;
+        }
+        header li a:hover {
+          text-decoration: underline;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            padding: 0;
+            margin: 0;
+        }
+        .active-page {
+          background-color: #A90000;
+        }
+        .layout {
+          padding: 0 20px 20px 20px;
+        }
+        .layout .flex-container {
+          flex-direction: column;
+          flex-wrap: wrap;
+          justify-content: left;
+        }
+        .layout > p {
+          margin-top: 0px;
+        }
+        table#your-table-items {
+            border-collapse: collapse;
+            border: 1px solid black;
+            text-align: center;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        table#your-table-items th:nth-child(1),
+        table#your-table-items td:nth-child(1) {
+            width: 270px;
+        }
+
+        table#your-table-items-thead {
+            font-size: 0.7em;
+            text-transform: uppercase;
+        }
+
+        table#your-table-items thead th {
+            color: white;
+            background-color: #666666;
+            padding: 8px;
+        }
+
+        table#your-table-items thead th:hover {
+            color: white;
+            background-color: #A90000;
+            cursor: pointer;
+        }
+
+        table#your-table-items thead th.tablesorter-headerAsc,
+        table#your-table-items thead th.tablesorter-headerDesc {
+            background-color: #A90000;
+        }
+
+        table#your-table-items tbody {
+            font-size: 0.9em;
+            line-height: 15px;
+        }
+
+        table#your-table-items tbody tr:hover {
+            color: black;
+            background-color: lightgray;
+        }
+
+        table#your-table-items tbody td {
+            padding: 0;
+            border-top: 1px solid rgba(154, 154, 154, 0.75);
+            border-right: 1px solid rgba (154, 154, 154, 0.75);
+        }
+
+        table#your-table-items tbody td img {
+            width: 300px;
+        }
+
+    </style>
+    <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/JavaScript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+    <script>
+        $(document).ready(function () {
+          $("table#your-table-items").tablesorter({
+            sortList: [[0, 0]],
+            CssAsc: "tablesorter-headerAsc",
+            CssDesc: "tablesorter-headerDesc"
+          });
+        });
+    </script>
+  </head>
+<body>
+  <header>
+    <nav>
+      <ul class="flex-container">
+        <li>
+          <a href="Index.html">Home</a>
+        </li>
+        <li>
+          <a href="Introduction.html">Introduction</a>
+        </li>
+        <li>
+          <a href="PartsCategories.html">Parts Categories</a>
+        </li>
+        <li class="active-page">
+          <a href="RecommendedCars.html">Recommended Cars</a>
+        </li>
+        <li>
+          <a href="Videos.html">Videos</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <article>
+    <div class="layout">
+      <h2>Recommended Cars</h2>
+      <p>
+        The cars listed below are affordable and have many aftermarket parts available to upgrade the car with.
+      </p>
+      <table id="your-table-items">
+        <thead>
+          <tr>
+            <th>Car</th>
+            <th>Make & Model</th>
+            <th>Drivetrain</th>
+            <th>Engine</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="./Assets/Images/bmwm3.jpg" alt="BMW M3" /></td>
+            <td>BMW 3 series/M3</td>
+            <td>RWD</td>
+            <td>4 cylinder & 6 cylinder
+                <br>(trim & model year dependent)</td>
+          </tr>
+          <tr>
+            <td><img src="./Assets/Images/fordfocusfiesta.jpg" alt="Ford Focus & Ford Fiesta" /></td>
+            <td>Ford Focus & Fiesta</td>
+            <td>FWD</td>
+            <td>4 cylinder</td>
+          </tr>
+          <tr>
+            <td>
+              <img src="./Assets/Images/hondacivic.jpg" alt="Honda Civic Si" />
+            </td>
+            <td>Honda Civic Si</td>
+            <td>FWD</td>
+            <td>4 cylinder</td>
+          </tr>
+          <tr>
+            <td>
+              <img src="./Assets/Images/hondaS2000.jpg" alt="Honda S2000" />
+            </td>
+            <td>Honda S2000</td>
+            <td>RWD</td>
+            <td>4 cylinder</td>
+          </tr>
+          <tr>
+            <td>
+              <img src="./Assets/Images/mazdaspeed3.jpg" alt="Mazda Mazdaspeed3" />
+            </td>
+            <td>Mazda Mazdaspeed3</td>
+            <td>FWD</td>
+            <td>4 cylinder</td>
+          </tr>
+          <tr>
+            <td>
+              <img src="./Assets/Images/mazdamx5.jpg" alt="Mazda MX5 Miata" />
+            </td>
+            <td>Mazda MX5 Miata</td>
+            <td>RWD</td>
+            <td>4 cylinder</td>
+          </tr>
+          <tr>
+            <td>
+              <img src="./Assets/Images/nissanZ.jpg" alt="Nissan 350Z & Nissan 370Z" />
+            </td>
+            <td>Nissan 350Z & 370Z</td>
+            <td>RWD</td>
+            <td>6 cylinder</td>
+          </tr>
+          <tr>
+            <td>
+              <img src="./Assets/Images/toyobaru.jpg" alt="Scion FR-S/Subaru BRZ/Toyota 86" />
+            </td>
+            <td>Scion FR-S/Subaru BRZ/Toyota 86 <br>(triplets - same car, different brands)</td>
+            <td>RWD</td>
+            <td>4 cylinder</td>
+          </tr>
+          <tr>
+            <td>
+              <img src="./Assets/Images/subaruwrx.jpg" alt="Subaru Impreza WRX" />
+            </td>
+            <td>Subaru Impreza WRX</td>
+            <td>AWD</td>
+            <td>4 cylinder</td>
+          </tr>
+          <tr>
+            <td>
+              <img src="./Assets/Images/vwgti.jpg" alt="Volkswagen Golf GTI" />
+            </td>
+            <td>Volkswagen Golf GTI</td>
+            <td>FWD</td>
+            <td>4 cylinder</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </article>    
+</body>
+
+</html>
